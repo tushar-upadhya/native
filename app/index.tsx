@@ -1,9 +1,11 @@
-import { Image, Pressable, Text, TouchableOpacity, View } from "react-native";
+import { Link } from "expo-router";
+import { View } from "react-native";
 import { style } from "../styles/authStyles";
+
 export default function Index() {
     return (
         <View style={style.container}>
-            <Text style={style.title}>Hello World</Text>
+            {/* <Text style={style.title}>Hello World</Text>
             <TouchableOpacity onPress={() => alert("touched")}>
                 <Text>Touch me</Text>
 
@@ -22,7 +24,9 @@ export default function Index() {
                 }}
                 style={{ width: 100, height: 100 }}
                 resizeMode="cover"
-            />
+            /> */}
+
+            <Link href={"/notifications"}>notifications</Link>
         </View>
     );
 }
